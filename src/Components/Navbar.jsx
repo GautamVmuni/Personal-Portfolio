@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { links } from '../data';
+import "./navBar.css"
 
 const Navbar = () => {
+
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <nav className="nav">
-      <div className="nev_menu">
+      <div className={`${showMenu ? 'nav_menu show-menu' : 'nav_menu'}`}>
         <ul className="nav_list">
           {links.map(({name, icon, path}, index) => {
             return (
               <li className="nav_item" key={index}>
-                <NavLink to={path} className="nav_link">
+                <NavLink 
+                  to={path} 
+                  className={({isActive}) => isActive ? 'nav_link active-nav' : 'nav_link'} 
+                  onClick={() => setShowMenu(!showMenu)}
+                >
                   {icon}
                   <h3 className="nav_name">{name}</h3>
                 </NavLink>
@@ -20,7 +28,10 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="nav_toggle">
+      <div 
+        className={`${showMenu ? 'nav_toggle animate-toggle' : 'nav_toggle'}`} 
+        onClick={() => setShowMenu(!showMenu)}
+      >
         <span></span>
         <span></span>
         <span></span>
