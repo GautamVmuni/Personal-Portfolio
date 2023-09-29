@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -11,7 +12,15 @@ import Contact from './Pages/Contact/Contact'
 
 function App() {
   return (
-    <></>
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route index element={<Home/>} />
+        <Route  path='about' element={<About/>} />
+        <Route  path='portfolio' element={<Portfolio/>} />
+        <Route  path='contact' element={<Contact/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
