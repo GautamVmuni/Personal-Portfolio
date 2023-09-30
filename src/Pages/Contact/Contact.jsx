@@ -11,6 +11,7 @@ import { FiSend } from 'react-icons/fi';
 import './contact.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import emailJs from "emailjs-com";
 
 const Contact = () => {
 
@@ -46,6 +47,16 @@ const Contact = () => {
           theme: 'colored',
       });
     }else{
+
+      emailJs.sendForm(
+        'service_g3tiixl',
+        'template_0aj94oa', 
+        e.target, 
+        'GexA43jgY-ukg05AW'
+        ).then(res => 
+          {console.log(res);}
+        ).catch(err => console.log(err));
+
       toast.success('Message Sent Successfully !', {
         position: "bottom-right",
         autoClose: 2000,
