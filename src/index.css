@@ -245,9 +245,6 @@
 }
 
 @media screen and (max-width: 450px) {
-    .home_img {
-        display: none;
-    }
 
     .home_content {
         margin-block: auto;
@@ -273,6 +270,11 @@
 }
 
 @media screen and (max-width: 350px) {
+
+    .home_img {
+        display: none;
+    }
+
     .home_title span {
         display: inline;
     }
