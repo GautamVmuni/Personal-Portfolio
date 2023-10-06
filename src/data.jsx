@@ -9,12 +9,12 @@ import {
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
-import Work1 from './assets/project-1.jpeg';
-import Work2 from './assets/project-2.jpg';
-import Work3 from './assets/project-3.jpeg';
-import Work4 from './assets/project-4.jpeg';
-import Work5 from './assets/project-5.jpg';
-import Work6 from './assets/project-6.jpg';
+import PortfolioElement1 from './assets/Personal Portfolio first.gif';
+import PortfolioElement2 from './assets/diwai poster.png';
+import PortfolioElement3 from './assets/Personal Portfolio second.gif';
+import PortfolioElement4 from './assets/mca logo.png';
+import PortfolioElement5 from './assets/business-card.gif';
+import PortfolioElement6 from './assets/Aqua Surf Packet.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -124,170 +124,116 @@ export const personalInfo = [
   },
 ];
 
-export const stats = [
-  {
-    id: 1,
-    no: '12+',
-    title: 'Years of <br /> Experience',
-  },
-
-  {
-    id: 2,
-    no: '97+',
-    title: 'Completed <br /> Projects',
-  },
-
-  {
-    id: 3,
-    no: '81+',
-    title: 'Happy <br /> Customers',
-  },
-
-  {
-    id: 4,
-    no: '53+',
-    title: ' Awards <br /> Won',
-  },
-];
-
 export const resume = [
   {
     id: 1,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2018 - PRESENT',
-    title: 'Web Developer <span> Envato </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
+    year: '2021 - PRESENT',
+    title: 'Software Engineer <span> TCS </span>',
+    desc: 'Handling backend of two Core Java based billing application.',
   },
 
   {
     id: 2,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2013 - 2018',
-    title: 'UI/UX Designer <span> Themeforest </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    year: '2020 - 2021',
+    title: 'Graphic Designer <span> Mumbai Cestoball Association </span>',
+    desc: 'I took on the responsibility of designing a wide range of materials, including eye-catching posters, distinctive logos, and engaging social media posts.',
   },
 
   {
     id: 3,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: '2005 - 2013',
-    title: 'Consultant <span> Videohive </span>',
-    desc: 'Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt',
+    year: '2021 - PRESENT',
+    title: 'Freelancer <span> UpWork </span>',
+    desc: ' My journey on Upwork has allowed me to continually expand my knowledge, build lasting professional relationships, and offer tailored solutions across various industries.',
   },
 
   {
     id: 4,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2015',
-    title: 'Engineering Degree <span> Oxford University </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore',
+    year: '2018 - 2021',
+    title: "Bachelor Degree <span> University of Mumbai </span>",
+    desc: "I successfully completed my bachelor's degree from the University of Mumbai with an impressive CGPI of 8.53.",
   },
 
   {
     id: 5,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2012',
-    title: 'Master Degree <span> KIEV University </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    year: '2016 - 2018',
+    title: 'Higher Secondary <span> Maharashtra State Board </span>',
+    desc: 'I have successfully completed my HSC with a commendable score of 61.33%.',
   },
 
   {
     id: 6,
     category: 'education',
     icon: <FaGraduationCap />,
-    year: '2009',
-    title: 'Bachelor Degree <span> Tunis High School </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore',
+    year: '2015 - 2016',
+    title: 'Secondary School <span> Maharashtra State Board </span>',
+    desc: 'I have proudly completed my SSC with a remarkable achievement of 84.40%.',
   },
 ];
 
 export const skills = [
   {
     id: 1,
-    title: 'Html',
-    percentage: '25',
+    title: 'Core Java',
+    percentage: '80',
   },
 
   {
     id: 2,
-    title: 'Javascript',
-    percentage: '89',
-  },
-
-  {
-    id: 3,
-    title: 'Css',
+    title: 'Shell Scripting',
     percentage: '70',
   },
 
   {
+    id: 3,
+    title: 'React JS',
+    percentage: '60',
+  },
+
+  {
     id: 4,
-    title: 'Php',
-    percentage: '66',
-  },
-
-  {
-    id: 5,
-    title: 'Wordpress',
-    percentage: '95',
-  },
-
-  {
-    id: 6,
-    title: 'Jquery',
-    percentage: '50',
-  },
-
-  {
-    id: 7,
-    title: 'Angular',
+    title: 'SQL',
     percentage: '65',
   },
 
   {
+    id: 5,
+    title: 'Javascript',
+    percentage: '55',
+  },
+
+  {
+    id: 6,
+    title: 'Springboot',
+    percentage: '60',
+  },
+
+  {
+    id: 7,
+    title: 'Html',
+    percentage: '70',
+  },
+
+  {
     id: 8,
-    title: 'React',
-    percentage: '45',
+    title: 'Css',
+    percentage: '55',
   },
 ];
 
 export const portfolio = [
   {
     id: 1,
-    img: Work1,
-    title: 'Photo Editing',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Photo',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Adobe Photoshop',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'www.dribble.com',
-      },
-    ],
-  },
-
-  {
-    id: 2,
-    img: Work2,
+    img: PortfolioElement1,
     title: 'Website Design',
     details: [
       {
@@ -298,7 +244,7 @@ export const portfolio = [
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Personal',
       },
       {
         icon: <FaCode />,
@@ -308,115 +254,143 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'NA',
+      },
+    ],
+  },
+
+  {
+    id: 2,
+    img: PortfolioElement2,
+    title: 'Graphic Design',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Poster',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Client : ',
+        desc: 'MCA',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'CorelDraw',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'NA',
       },
     ],
   },
 
   {
     id: 3,
-    img: Work3,
-    title: 'Video Editing',
+    img: PortfolioElement3,
+    title: 'Website Design',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'Website',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Personal',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: 'React JS',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'NA',
       },
     ],
   },
 
   {
     id: 4,
-    img: Work4,
-    title: 'Video Editing',
+    img: PortfolioElement4,
+    title: 'Graphic Design',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'Logo',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'MCA',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: 'Adobe illustrator',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'NA',
       },
     ],
   },
 
   {
     id: 5,
-    img: Work5,
-    title: 'Landing Page',
+    img: PortfolioElement5,
+    title: 'Graphic Design',
     details: [
       {
         title: 'Project : ',
-        desc: 'Website',
+        desc: 'Business Card',
       },
       {
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Narayan Enterprises',
       },
       {
         title: 'Language : ',
-        desc: 'React JS, Node JS',
+        desc: 'CorelDraw',
       },
       {
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'NA',
       },
     ],
   },
 
   {
     id: 6,
-    img: Work6,
-    title: 'Photo Editing',
+    img: PortfolioElement6,
+    title: 'Graphic Design',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Photo',
+        desc: 'Product Design',
       },
       {
         icon: <FiUser />,
         title: 'Client : ',
-        desc: 'Dribble',
+        desc: 'Narayan Enterprises',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Photoshop',
+        desc: 'CorelDraw',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dibble.com',
+        desc: 'NA',
       },
     ],
   },
@@ -489,25 +463,25 @@ export const socialMedia = [
   {
     id: 1,
     img: LinkedIn,
-    path: 'https://linkedin.com'
+    path: 'https://www.linkedin.com/in/gautammuni/'
   },
 
   {
     id: 2,
     img: LeetCode,
-    path: 'https://leetcode.com'
+    path: 'https://leetcode.com/GautamMuni/'
   },
 
   {
     id: 3,
     img: GitHub,
-    path: 'https://github.com'
+    path: 'https://github.com/GautamVmuni'
   },
 
   {
     id: 4,
     img: Instagram,
-    path: 'https://instagram.com'
+    path: 'https://www.instagram.com/gautam_v_muni/'
   },
 
 ];
