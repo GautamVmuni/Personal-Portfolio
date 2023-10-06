@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {
   FaEnvelopeOpen,
   FaPhoneSquareAlt,
-  FaFacebookF,
+  FaGithub,
   FaInstagram,
   FaLinkedin
 } from 'react-icons/fa'
@@ -12,6 +12,7 @@ import './contact.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailJs from "emailjs-com";
+import { motion } from 'framer-motion';
 
 const Contact = () => {
 
@@ -93,7 +94,7 @@ const Contact = () => {
             </p>
 
             <div className="contact_info">
-              <div className="info_item">
+              <div className="info_item item_animation">
                 <FaEnvelopeOpen className='info_icon' />
 
                 <div>
@@ -102,7 +103,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="info_item">
+              <div className="info_item item_animation">
                 <FaPhoneSquareAlt className='info_icon' />
 
                 <div>
@@ -112,40 +113,40 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="contact_socials">
-              <a href="https://facebook.com" className="contact_social-link"><FaFacebookF /></a>
+            <div className="contact_socials social_icons">
+              <a href="https://github.com/GautamVmuni" className="contact_social-link" target='_blank' rel="noreferrer"><FaGithub /></a>
 
-              <a href="https://instagram.com" className="contact_social-link"><FaInstagram /></a>
+              <a href="https://www.instagram.com/gautam_v_muni/" className="contact_social-link" target='_blank' rel="noreferrer"><FaInstagram /></a>
 
-              <a href="https://linkedin.com" className="contact_social-link"><FaLinkedin /></a>
+              <a href="https://www.linkedin.com/in/gautammuni/" className="contact_social-link" target='_blank' rel="noreferrer"><FaLinkedin /></a>
             </div>
           </div>
 
           <form className="contact_form" onSubmit={handleSubmit} id='contact_form_id'>
             <div className="form_input-group">
-              <div className="form_input-div">
+              <motion.div className="form_input-div" initial={{ scale: 0 }} animate={{ scale: 1}} transition={{ duration: 0.3 }}>
                 <input type="text" placeholder='Your Name' name='name' value={formData.name} className="form_control" onChange={handleChange} />
-              </div>
+              </motion.div>
 
-              <div className="form_input-div">
+              <motion.div className="form_input-div" initial={{ scale: 0 }} animate={{ scale: 1}} transition={{ duration: 0.3 }}>
                 <input type="email" placeholder='Your Mail' name='email' value={formData.email} className="form_control" onChange={handleChange} />
-              </div>
+              </motion.div>
 
-              <div className="form_input-div">
+              <motion.div className="form_input-div" initial={{ scale: 0 }} animate={{ scale: 1}} transition={{ duration: 0.3 }}>
                 <input type="text" placeholder='Your Subject' name='subject' value={formData.subject} className="form_control" onChange={handleChange} />
-              </div>
+              </motion.div>
             </div>
 
-            <div className="form_input-div">
+            <motion.div className="form_input-div" initial={{ scale: 0 }} animate={{ scale: 1}} transition={{ duration: 0.3 }}>
               <textarea placeholder='Your Message' name='message' value={formData.message} className="form_control textarea" onChange={handleChange}></textarea>
-            </div>
+            </motion.div>
 
-            <button className="button" type='submit'>
+            <motion.button className="button contact_button" type='submit' whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>
               Send Message
               <span className="button_icon contact_button-icon">
                 <FiSend />
               </span>
-            </button>
+            </motion.button>
           </form>
         </div>
 

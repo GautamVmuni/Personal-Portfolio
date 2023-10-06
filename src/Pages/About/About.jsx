@@ -1,12 +1,13 @@
 import React from 'react'
 import Info from '../../Components/Info'
-import Stats from '../../Components/Stats'
 import { FaDownload} from 'react-icons/fa'
 import Resume from '../../assets/MyResume.pdf'
 import './about.css';
 import Skills from '../../Components/Skills'
 import { resume } from '../../data'
 import ResumeItem from '../../Components/ResumeItem'
+import SocialMedia from '../../Components/SocialMedia';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
@@ -18,22 +19,22 @@ const About = () => {
 
         <div className="about_container grid">
           <div className="about_info">
-            <h3 className="section_subtitle">Personal Infos</h3>
+            <h3 className="section_subtitle personal_info">Personal Infos</h3>
 
             <ul className="info_list grid">
               <Info />
             </ul>
 
-            <a href={Resume} download='' className="button">
+            <motion.a href={Resume} download='' className="button resume_btn" whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>
               Download Resume{' '}
-              <span className="button_icon">
+              <span className="button_icon download_icon">
                 <FaDownload />
               </span>
-            </a>
+            </motion.a>
           </div>
 
-          <div className="stats grid">
-            <Stats />
+          <div className="social grid">
+            <SocialMedia />
           </div>
         </div>
       </section>
