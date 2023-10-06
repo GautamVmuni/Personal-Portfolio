@@ -23,7 +23,7 @@ const SocialMedia = () => {
             return (
                 <motion.div className="social_container" key={index} whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} variants={socialAnimationVeriants} initial="initial" whileInView="animate" viewport={{once: true,}} custom={index}>
                     <div className="social_box">
-                        <a href={path} className="social_link">
+                        <a href={path} className="social_link" target='_blank' rel="noreferrer">
                             <img src={img} alt="" className="social_logo" />
                         </a>
                     </div>
