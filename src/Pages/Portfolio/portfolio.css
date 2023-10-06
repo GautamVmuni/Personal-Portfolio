@@ -7,6 +7,8 @@
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    animation: slideUpwithOpacity 0.7s ease backwards;
+    animation-delay: 0.2s;
 }
 
 .portfolio_img {
@@ -114,3 +116,14 @@
     object-fit: cover;
 } 
 
+@keyframes slideUpwithOpacity {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

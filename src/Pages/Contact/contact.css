@@ -6,11 +6,15 @@
     font-size: var(--h3-font-size);
     font-weight: var(--weight-600);
     margin-bottom: 1rem;
+    animation: slideRight 0.7s ease backwards;
+    animation-delay: 0.1s;
 }
 
 .contact_description {
     font-size: var(--small-font-size);
     line-height: 1.6;
+    animation: slideRightwithOpacity 0.7s ease backwards;
+    animation-delay: 0.2s;
 }
 
 .contact_description,
@@ -93,4 +97,51 @@
 .contact_button-icon {
     font-size: var(--h3-font-size);
     line-height: 64px;
+}
+
+.item_animation {
+    animation: slideRightwithOpacity 0.7s ease backwards;
+    animation-delay: 0.3s;
+}
+
+.social_icons {
+    animation: slideUpwithOpacity 0.7s ease backwards;
+    animation-delay: 0.5s;
+}
+
+.contact_button{
+    animation: slideUpwithOpacity 0.7s ease backwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes slideUpwithOpacity {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRightwithOpacity {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

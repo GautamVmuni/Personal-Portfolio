@@ -1,6 +1,6 @@
 .about_container,
 .info_list,
-.stats,
+.social,
 .resume_container {
     grid-template-columns: repeat(2,1fr);
     align-items: flex-start;
@@ -17,6 +17,11 @@
     margin-bottom: 20px;
 }
 
+.personal_info{
+    animation: slideSocialBoxRight 0.7s ease backwards;
+    animation-delay: 0.1s;
+}
+
 .info_list .info_title,
 .info_list .info_description {
     font-size: var(--small-font-size);
@@ -25,35 +30,6 @@
 .info_list .info_description {
     color: var(--title-color);
     font-weight: var(--weigth-600);
-}
-
-.stats_box {
-    border: 1px solid var(--border-color);
-    padding: 20px 30px 25px;
-    border-radius: 5px;
-}
-
-.stats_no {
-    color: var(--first-color);
-    font-size: var(--h1-font-size);
-    line-height: 1.2;
-}
-
-.stats_title {
-    font-size: var(--small-font-size);
-    line-height: 1.6;
-    padding-left: 45px;
-    position: relative;
-}
-
-.stats_title::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 25%;
-    width: 30px;
-    height: 1px;
-    background-color: var(--text-color);
 }
 
 .separator {
@@ -167,4 +143,82 @@
 .resume_description {
     font-size: var(--smaller-font-size);
     line-height: 1.6;
+}
+
+.social_container {
+    display: flex;
+}
+
+.social_box {
+    padding: 20px 30px 25px;
+    border-radius: 5px;
+    height: 150px;
+    width: 250px;
+    border: 2px solid var(--border-color);
+    /* overflow: hidden; */
+}
+
+.social_logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section_title {
+    animation: slideSectionTitleDown 0.7s ease backwards;
+    animation-delay: 0.1s;
+}
+
+.info_item {
+    animation: slideSocialBoxRight 0.7s ease backwards;
+    animation-delay: 0.1s;
+}
+
+.resume_btn {
+    animation: popButton 1s ease-in-out backwards;
+    animation-delay: 0.1s;
+}
+
+.download_icon{
+    animation: rotateIcon 0.7s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes slideSectionTitleDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideSocialBoxRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popButton {
+    0% {transform: translateX(-700px);}
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
