@@ -27,6 +27,11 @@ import Theme8 from './assets/orange.png';
 import Theme9 from './assets/green.png';
 import Theme10 from './assets/yellow.png';
 
+import Instagram from './assets/instagram.jpeg';
+import LinkedIn from './assets/LinkedIn.png';
+import LeetCode from './assets/LeetCode-logo.png';
+import GitHub from './assets/Github-logo.png';
+
 export const links = [
   {
     id: 1,
@@ -61,25 +66,25 @@ export const personalInfo = [
   {
     id: 1,
     title: 'First Name : ',
-    description: 'Steve',
+    description: 'Gautam',
   },
 
   {
     id: 2,
     title: 'Last Name : ',
-    description: 'Milner',
+    description: 'Muni',
   },
 
   {
     id: 3,
     title: 'Age : ',
-    description: '27 Years',
+    description: '22 Years',
   },
 
   {
     id: 4,
     title: 'Nationality : ',
-    description: 'Tunisian',
+    description: 'Indian',
   },
 
   {
@@ -91,31 +96,31 @@ export const personalInfo = [
   {
     id: 6,
     title: 'Address : ',
-    description: 'Tunis',
+    description: 'Mumbai, India',
   },
 
   {
     id: 7,
     title: 'Phone : ',
-    description: '+21621184010',
+    description: '+91 9619526992',
   },
 
   {
     id: 8,
     title: 'Email : ',
-    description: 'you@mail.com',
+    description: 'gautam.muni@mail.com',
   },
 
   {
     id: 9,
-    title: 'Skype : ',
-    description: 'steve.milner',
+    title: 'Gender : ',
+    description: 'Male',
   },
 
   {
     id: 10,
-    title: 'Langages : ',
-    description: 'French, English',
+    title: 'Languages : ',
+    description: 'Hindi, English',
   },
 ];
 
@@ -477,4 +482,32 @@ export const themes = [
     img: Theme10,
     color: 'hsl(42, 100%, 50%)',
   },
+];
+
+export const socialMedia = [
+
+  {
+    id: 1,
+    img: LinkedIn,
+    path: 'https://linkedin.com'
+  },
+
+  {
+    id: 2,
+    img: LeetCode,
+    path: 'https://leetcode.com'
+  },
+
+  {
+    id: 3,
+    img: GitHub,
+    path: 'https://github.com'
+  },
+
+  {
+    id: 4,
+    img: Instagram,
+    path: 'https://instagram.com'
+  },
+
 ];

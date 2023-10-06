@@ -17,16 +17,13 @@
         font-size: var(--big-font-size);
     }
 
+    .social_box {
+        height: 125px;
+        width: 225px;
+    }
+
     .home_description {
         font-size: var(--small-font-size);
-    }
-
-    .stats_title {
-        padding-left: 35px;
-    }
-
-    .stats_title::before{
-        width: 22px;
     }
 
     .skills_container {
@@ -147,6 +144,11 @@
         display: none;
     }
 
+    .social_box {
+        height: 125px;
+        width: 200px;
+    }
+
     .home_img {
         width: 270px;
         height: 270px;
@@ -264,8 +266,14 @@
         margin-bottom: 4px;
     }
 
-    .stats_box {
-        padding: 15px 15px 25px 20px;
+    .social_box {
+        padding: 15px 15px 15px 15px;
+        height: 100px;
+        width: 150px;
+    }
+    .social {
+        height: 220px;
+        width: 350px;
     }
 }
 
@@ -279,7 +287,7 @@
         display: inline;
     }
 
-    .stats {
+    .social {
         grid-template-columns: 1fr;
     }
 }
